@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* <-------------------- HEADER -----------------------------------> */
+
+
+header.titulo{
+background-color: orange;
+width: 100%;
+border: 5px solid black;
+height: auto;
+display: flex;
+border-radius: 10px;
+}
+
+header h1{
+    font-family: 'Bungee Inline', cursive;
+    background-color: orange;
+    font-size: 40px;
+}
+
+header img{
+    size: 50px;
+    width: auto;
+    height: 70px;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: orange;
+    margin-top: 15px;
+}
+
+h2.darwin{
+    text-align: left;
+    background-color: orange;
+    font-family: 'Bungee Inline', cursive;
+    background-color: orange;
+    font-size: 40px;
+}
+
+
+
+/* <----------------------------- MAIN Y VENTANA ------------------------------->  */
+
+main{
+    background-color: rgb(43, 41, 41);
+    width: 100%;
+    height: 880px;
+}
+
+section.ventana{
+    padding: 15px;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Bungee Spice', cursive;
+    text-decoration: none;
+    background-color: black;
+    display: block;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: orange;
+}
+
+section.ventana div a{
+    width: 20%;
+    border-radius: 10px;
+    text-decoration: none;
+    background-position: center;
+    background-size: cover;
+}
+
+.home{
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+section.ventana div a:hover{
+    border: orange 10px groove;
+}
+
+
+.canciones{
+    text-decoration: none;
+}
+
+.nosotros{
+    text-decoration: none;
+}
+
+.noticias{
+    text-decoration: none;
+}
+
+.contactos{
+    text-decoration: none;
+}
+
+/* <------------------------------------- FOOTER ----------------------------> */
+
+footer{
+    height: auto;
+    background-color: orange;
+    width: 100%;
+    padding: 15px;
+    border: 5px solid black;
+    display: flex;
+    border-radius: 10px;
+}
+
+footer div{
+    width: 33%;
+}
+
+footer div.avion img{
+    height: 40px;
+    width: auto;
+    margin: 10px;
+}
+
+.terminos{
+    margin-left: 750px;
+    text-align: center;
+}
+
+footer h2{
+    font-size: medium;
+    background-color: orange;
+    display: block;
+    font-family: 'Playfair Display', serif;
+    margin: 4px;
+}
+
+footer a i{
+    background-color: orange;
+    font-size: 25px;
+    color: black;
+    letter-spacing: 20px;
+    display: block;
+    margin-left: 16px;
+}
+
+footer a i:hover{
+    color: rgb(89, 8, 240);
+}
+
+footer h2 a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+/* <---------------------------- PAGINA PRINCIPAL ----------------------------------> */
+
+section.mitad{
+    display: flex;
+    height: 395px;
+}
+
+section.mitad.primera div{
+    width: 33%;
+}
+
+section.mitad.segunda div{
+    width: 50%;
+}
+
+section.ventana div.video{
+    text-align: center;
+    margin-top: 200px;
+    border: solid 10px orange;
+    border-radius: 10px;
+    height: 305px;
+    width: 520px;
+    border-style: double;
+}
+
+section.ventana div.video:hover{
+    border-style: groove;
+}
+
+section.mitad div.breveDescrip{
+    margin-top: 280px;
+    border: 10px solid orange;
+    font-size: small;
+    width: 450px;
+    height: 105px;
+    border-style: groove;
+    border-radius: 10px;
+    margin-left: 300px;
+    background-color: black;
+}
+
+div.breveDescrip p{
+    margin-top: 4px;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    color: yellow;
+}
+
+div.breveDescrip a{
+    font-size: larger;
+    border: 7px;
+    margin-left: 280px;
+}
+
+div.breveDescrip a:hover{
+    background-color: orange;
+}
+
+/* <------------------------------------- CANCIONES --------------------------> */
+
+section select{
+    margin-top: 50px;
+    font-size: large;
+    background-color: orange;
+    height: 50px;
+    font-family: 'Bungee Inline', cursive;
+    border: 5px solid black;
+}
+
+section select:hover{
+    text-transform: uppercase;
+    border: orange;
+}
+
+#celestia{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#pcelestia{
+    font-size: small;
+}
+
+iframe{
+    margin-top: 30px;
+}
+
+/* <-------------------------------- NOSOTROS ------------------------> */
+
+
+/* <---------------------------------- NOTICIAS ---------------------------------> */
+section.noticias{
+    width: 100%;
+    height: 770px;
+    border: none;
+    margin-left: 30px;
+    display: flex;
+}
+
+.todasLasNoticias h3{
+    background-color: orange;
+    font-size: xxx-large;
+    text-align: justify;
+    text-decoration: dashed;
+    width: 800px;
+    height: 70px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    border: 5px gold groove;
+}
+
+div.noticiasYCalendario{
+    width: 100%;
+    height: 700px;
+}
+
+
+div.todasLasNoticias iframe.docNoticias{
+    height: 650px;
+    width: 800px;
+    margin-top: 0;
+    border: 5px gold groove;
+    border-top: 0%;
+}
+
+div.calendario{
+    margin-left: 90px;
+}
+
+div.calendario h4{
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    margin-top: 150px;
+}
+
+div.calendario iframe.docCalendario{
+    width: 400px;
+    height: 400px;
+}
+
+/* <--------------------------------- CONTACTOS ------------------------------------>  */
+
+
+/* <---------------------------------- @media -----------------------------------> */
+
+
+@media only screen and (max-width: 1400px){
+    .terminos{
+        margin-left: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 1252px){
+    section.ventana{
+        font-size: 35px;
+    }
+    .terminos{
+        margin-left: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 1244px){
+    section.ventana{
+        font-size: 30px;
+    }
+    div.breveDescrip a{
+        margin-left: 10px;
+    }
+    #pcelestia{
+        font-size: large;
+    }
+    iframe{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 702px){
+    section.ventana{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 948px){
+    main{
+        width: 882px;
+
+    }
+    footer{
+        width: 882px;
+    }
+
+    .terminos{
+        margin-left: 5px;
+    }
+
+    header.titulo{
+        width: 882px;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    footer{
+        height: 130px;
+    }
+    main{
+        height: 1100px;
+    }
+    section.ventana{
+        height: 170px;
+        font-size: 55px;
+    }
+    section.mitad div.breveDescrip{
+        height: 150px;
+    }
+}
