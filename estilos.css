@@ -6,8 +6,12 @@
 
 body {
   background-color: rgb(250, 236, 236);
+}
+
+html {
   scroll-behavior: smooth;
 }
+
 /* <-------------------- HEADER -----------------------------------> */
 header.titulo {
   background-color: orange;
@@ -63,7 +67,6 @@ section.ventana {
   font-family: "Bungee Spice", cursive;
   text-decoration: none;
   background-color: black;
-  display: block;
   border-radius: 10px;
   border-style: inset;
   border-color: orange;
@@ -83,7 +86,9 @@ section.ventana div a {
 }
 
 section.ventana div a:hover {
-  border: orange 10px groove;
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5);
+  padding: 10px;
 }
 
 .canciones {
@@ -111,7 +116,7 @@ footer {
   border: 5px solid black;
   display: flex;
   border-radius: 10px;
-  margin-top: 15px;
+  margin-top: 35px;
 }
 
 footer div {
@@ -212,6 +217,24 @@ section.mitad div.breveDescrip {
   margin-left: 300px;
   background-color: black;
   transition: 2s;
+  animation: brillo 2s linear infinite;
+}
+
+
+
+@keyframes brillo {
+	0% {
+	    background-color: orange;
+	    box-shadow: none;
+	}
+	50% {
+	    background-color: #555;
+	    box-shadow: 0 0 10px #fff;
+	}
+	100% {
+	    background-color: orange;
+	    box-shadow: none;
+	}
 }
 
 div.breveDescrip p {
@@ -280,22 +303,64 @@ div.fotosCanciones a img:hover {
   border-style: none;
 }
 
-#celestia {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  font-family: "Courier New", Courier, monospace;
-  background-color: rgb(241, 235, 235);
-}
-
-#pcelestia {
-  font-size: small;
-}
-
 iframe {
   margin-top: 30px;
 }
 
 /* <-------------------------------- NOSOTROS ------------------------> */
+
+.galeriahd {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+
+.galeriahd div{
+  background-image: url(./img/darwinfoto.jpg);
+  width: 200px;
+  height: 300px;
+  background-size: cover;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.galeriahd div:hover{
+  transform: scale(1.1);
+}
+
+.descripcion{
+  text-align: center;
+}
+
+#titulohd{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: rgb(241, 235, 235);
+  font-family: 'Tilt Prism', cursive;
+  font-size: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  line-height: 1.5;
+  display: inline-block;
+  padding: 10px;
+}
+
+#parrafohd{
+  font-size: small;
+  font-family: 'Castoro Titling', cursive;
+  margin: 20px;
+  background-color: rgb(241, 235, 235);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
 /* <---------------------------------- NOTICIAS ---------------------------------> */
 section.noticias {
   width: 100%;
@@ -310,9 +375,9 @@ section.noticias {
   font-size: xxx-large;
   text-align: justify;
   -webkit-text-decoration: dashed;
-          text-decoration: dashed;
+  text-decoration: dashed;
   width: 800px;
-  height: 70px;
+  height: 90px;
   margin-top: 30px;
   text-align: center;
   font-family: "Silkscreen", cursive;

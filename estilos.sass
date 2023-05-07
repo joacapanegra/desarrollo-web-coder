@@ -6,7 +6,7 @@
 body
     background-color: rgb(250, 236, 236)
 
-    html
+html
     scroll-behavior: smooth
 
 
@@ -58,7 +58,6 @@ h2.darwin
 /* <----------------------------- MAIN Y VENTANA ------------------------------->  */
 
 main
-    /* background-color: rgb(43, 41, 41) */
     width: 100%
     height: 880px
     background-image: url(img/seamless-monochrome-paper-origami-bird-pattern-background-vector.jpg), linear-gradient(to bottom right, orange, black)
@@ -73,7 +72,7 @@ section.ventana
     font-family: 'Bungee Spice', cursive
     text-decoration: none
     background-color: black
-    display: block
+    // display: block
     border-radius: 10px
     border-style: inset
     border-color: orange
@@ -93,7 +92,9 @@ section.ventana div a
 
 
 section.ventana div a:hover
-    border: orange 10px groove
+    transform: translateY(-5px) 
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5)
+    padding: 10px
 
 
 
@@ -224,6 +225,23 @@ section.mitad div.breveDescrip
     margin-left: 300px
     background-color: black
     transition: 2s 
+    animation: brillo 2s linear infinite
+
+@keyframes brillo {
+	0% {
+	    background-color: #333;
+	    box-shadow: none;
+	}
+	50% {
+	    background-color: #555;
+	    box-shadow: 0 0 10px #fff;
+	}
+	100% {
+	    background-color: #333;
+	    box-shadow: none;
+	}
+}
+
 
 
 
@@ -288,10 +306,12 @@ div.fotosCanciones a img
     border: none
 
 
+
 div.fotosCanciones a img:hover
     transform: scale(1.1)
     border: none
     border-style: none
+    
 
 
 
@@ -312,6 +332,8 @@ iframe
 
 
 /* <-------------------------------- NOSOTROS ------------------------> */
+
+
 
 
 /* <---------------------------------- NOTICIAS ---------------------------------> */
