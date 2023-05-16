@@ -166,7 +166,7 @@ footer h2 {
   font-size: medium;
   background-color: orange;
   display: block;
-  font-family: "code-saver", sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
   font-style: normal;
   margin: 4px;
@@ -458,6 +458,10 @@ select.grande {
 select:hover {
   text-transform: uppercase;
   border: orange;
+}
+
+.enterate{
+  font-size: 22px;
 }
 
 div.fotosCanciones {
@@ -778,15 +782,45 @@ div.calendario iframe.docCalendario {
 /* <--------------------------------- CONTACTOS ------------------------------------>  */
 .logosRedes{
   display: flex;
-  margin: 45px;
+  margin-top: 10px;
 }
 
-.logosRedes div{
-  width: 33%;  
-  height: 250px;
+.logosRedes a{
+  width: 500px;  
+  height: 100px;
   background-size: cover;
   background-position: center;
-  animation: wiggle 2s infinite ease-in-out;
+  margin: 5px;
+  background-color: #777676;
+  border-radius: 10px;
+}
+
+.logosRedes a:hover{
+  border: 6px solid black;
+}
+
+.logosComunicacion{
+  display: flex;
+  margin: 25px;
+}
+
+.logosComunicacion article{
+  background-color: #777676;
+  width: 700px;
+  margin: 10px;
+  height: 600px;
+  border-radius: 30px;
+  margin-right: 10px black solid;
+  border-right-style: double;
+}
+
+.logosComunicacion article div{
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 
 @keyframes wiggle {
@@ -801,18 +835,65 @@ div.calendario iframe.docCalendario {
   }
 }
 
+.logosComunicacion h2{
+  margin: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.logosComunicacion form{
+  display: grid;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.logosComunicacion input{
+  margin: 15px;
+  border: orange solid 2px;
+}
+
+.logosComunicacion textarea{
+  margin: 15px;
+  border: orange solid 2px;
+}
+
+.logosComunicacion button{
+  margin: 15px;
+  background-color: orange;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.logosComunicacion button:hover{
+  background-color: white;
+}
+
+.logosComunicacion h3{
+  font-weight: bold;
+  margin: 50px;
+  font-size: 50px;
+}
+
 .whatsapp{
   background-image: url(./img/whatsapp.png);
 }
 
 .insta{
   background-image: url(./img/instagram.png);
-  margin-left: 250px;
 }
 
 .tiktok{
   background-image: url(./img/tiktok.png);
-  margin-left: 250px;
+}
+
+.gmail{
+  background-image: url(./img/mail.png);
+  animation: wiggle 2s infinite ease-in-out;
+}
+
+.telefono{
+  background-image: url(./img/phone.png);;
+  animation: wiggle 2s infinite ease-in-out;
 }
 
 /* <---------------------------------- @media -----------------------------------> */
