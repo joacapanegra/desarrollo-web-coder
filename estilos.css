@@ -13,6 +13,10 @@ html {
 }
 
 /* <-------------------- HEADER -----------------------------------> */
+header{
+  width: 100%;
+}
+
 header.titulo {
   background-color: orange;
   width: 100%;
@@ -314,7 +318,6 @@ section.mitadPrimera div{
 section div.cuadradosDeInfo{
   margin-top: 45px;
   border: 10px solid orange;
-  width: 100%;
   height: auto;
   border-style: groove;
   border-radius: 10px;
@@ -874,72 +877,232 @@ div.calendario iframe.docCalendario {
 }
 
 /* <---------------------------------- @media -----------------------------------> */
-/* @media only screen and (max-width: 1400px) {
-  .terminos {
-    margin-left: 5px;
-  }
-}
-@media only screen and (max-width: 1252px) {
-  section.ventana {
+@media only screen and (max-width: 1300px){
+  section.ventana{
     font-size: 35px;
   }
-  .terminos {
-    margin-left: 5px;
+}
+
+@media only screen and (max-width: 1280px)
+{
+  section div.cuadradosDeInfo{
+    width: 250px;
+  }
+
+  .avioncitos img{
+    width: 5%;
+    height: 80%;
+  }
+
+  .cuadradosDeInfo a{
+    margin-left: 10px;
+    width: 100px;
   }
 }
-@media only screen and (max-width: 1244px) {
-  section.ventana {
+
+@media only screen and (max-width: 1180px)
+{
+  .mitadPrimera div img{
+    width: 0px;
+    height: 0px;
+    border: 0px;
+    margin-right: 0px; 
+    margin-left: 0px;
+  }
+  .avioncitos img{
+    width: 0px;
+    height: 0px;
+  }
+  .cuadradosDeInfo p{
+    height: 70px;
+  }
+  .cuadradosDeInfo a{
+    height: 40px;
+    margin-top: 20px;
+  }
+  .cuadradosDeInfo img{
+    margin-left: 0px;
+    width: 50px;
+    height: auto;
+  }
+  footer h5, p{
+    font-size: 0px;
+  }
+}
+
+@media only screen and (max-width: 1040px)
+{
+  section.ventana{
     font-size: 30px;
   }
-  div.breveDescrip a {
-    margin-left: 10px;
+}
+
+@media only screen and (max-width: 940px)
+{
+  .mitadSegunda{
+    display: block;
+    margin-left: 0px;
   }
-  #pcelestia {
-    font-size: large;
+  .mitadSegunda div:nth-child(-n+2){
+    display: flex;
+    width: 100%;
+    height: 100px;
   }
-  iframe {
-    margin-top: 50px;
+  .mitadSegunda div:nth-last-child(-n+2){
+    display: flex;
+    width: 100%;
+    height: 100px;
+  }
+
+  .mitadSegunda div img{
+    animation: none;
+    width: 100px;
+    height: auto;
+  }
+  .mitadSegunda div p{
+    width: 500px;
+  }
+  .fondoGris{
+    margin: 5px;
+  }
+  .avioncitos p{
+    padding: 0px;
   }
 }
-@media only screen and (max-width: 702px) {
-  section.ventana {
-    font-size: 25px;
-  }
-}
-@media only screen and (max-width: 948px) {
-  main {
-    width: 882px;
-  }
-  footer {
-    width: 882px;
-  }
-  .terminos {
-    margin-left: 5px;
-  }
-  header.titulo {
-    width: 882px;
-  }
-}
-@media only screen and (max-width: 390px) {
-  footer {
-    height: 130px;
-  }
-  main {
-    height: 1100px;
-  }
-  section.ventana {
-    height: 170px;
-    font-size: 55px;
-  }
-  section.mitad div.breveDescrip {
+
+@media only screen and (max-width: 910px)
+{
+  section.ventana{
+    font-size: 45px;
     height: 150px;
   }
-} */
 
-/* @media only screen and (min-width: 1300px){
-  section.ventana{
-    font: 30px;
+  footer h2{
+    font-size: 14px;
+    text-align: end;
   }
-} */
 
+
+  footer i{
+    letter-spacing: 2px;
+    font-size: 14px;
+    width: 10px;
+    margin-left: 1px;
+    text-align: start;
+  }
+}
+
+@media only screen and (max-width: 740px)
+{
+  section.ventana{
+    font-size: 35px;
+  }
+  header img{
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 687px)
+{
+  .ventana{
+    height: auto;
+  }
+
+
+  .mitadPrimera div.video{
+    border-style: none;
+    width: 25%;
+  }
+
+
+  .mitadPrimera div img{
+    width: 200px;
+    height: auto;
+    margin-right: 0px;
+    margin-left: 2%;
+  }
+
+  .mitadPrimera div video{
+    width: 0px;
+    height: 0px;
+  }
+
+  .mitadPrimera div.video:active{
+    width: none;
+    height: none;
+    border: none;
+  }
+
+  .mitadPrimera div.video:hover{
+    transform: none;
+    transition: none;
+    width: none;
+    height: none;
+    border: none;
+  }
+
+  .cuadradosDeInfo a{
+    margin-right: 0px;
+  }
+
+  footer div.avion{
+    display: flex;
+  }
+  .footer div.frase{
+    display: none;
+    width: 0%;
+    height: 0%;
+  }
+}
+
+@media only screen and (max-width: 640px)
+{
+  .cuadradosDeInfo a{
+    margin-left: 0px;
+    text-align: center;
+    width: 100%;
+  }
+  .cuadradosDeInfo img{
+    display: none;
+  }
+  footer div.terminos a{
+    margin-left: 0px;
+    margin-right: 10%;
+    font-size: 14px;
+  }
+
+  footer div.terminos a i{
+    font-size: 14px;
+  }
+
+  section.mitadSegunda div.cuadradosDeInfo{
+    display: grid;
+    height: 120px;
+  }
+
+  .cuadradosDeInfo p{
+    height: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  section.fondoGris{
+    margin: 5%;
+  }
+
+}
+
+@media only screen and (max-width: 600px)
+{
+  header img{
+    width: 50px;
+    height: auto;
+  }
+  header h1{
+    font-size: 35px;
+  }
+  .bienvenida h2{
+    font-size: 30px;
+  }
+}
 /* # sourceMappingURL=estilos.css.map */
