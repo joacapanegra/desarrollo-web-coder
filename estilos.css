@@ -430,7 +430,7 @@ select {
 select.grande {
   width: 600px;
   height: 100px;
-  margin-top: 120px;
+  margin-top: 60px;
 }
 
 select:hover {
@@ -443,7 +443,7 @@ select:hover {
 }
 
 div.fotosCanciones {
-  margin-top: 250px;
+  margin-top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -762,7 +762,6 @@ div.calendario iframe.docCalendario {
 /* <--------------------------------- CONTACTOS ------------------------------------>  */
 .logosRedes{
   display: flex;
-  margin-top: 10px;
 }
 
 .logosRedes a{
@@ -876,6 +875,20 @@ div.calendario iframe.docCalendario {
   animation: wiggle 2s infinite ease-in-out;
 }
 
+#numero:target{
+  animation: iluminar 2s ease-in-out;
+}
+
+@keyframes iluminar {
+  0% {
+    border: white 5px solid;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    border: initial;
+  }
+}
 /* <---------------------------------- @media -----------------------------------> */
 @media only screen and (max-width: 1300px){
   section.ventana{
