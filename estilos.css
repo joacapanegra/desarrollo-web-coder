@@ -507,7 +507,7 @@ div.fotosCanciones a img:hover {
 
 .spotify a{
   width: 500px;
-  height: auto;
+  height: 90px;
   background-position: center;
   background-size: cover;
   margin: 10px;
@@ -1040,6 +1040,10 @@ div.calendario iframe.docCalendario {
     width: 300px;
     height: auto;
   }
+
+  .youtubeYSpotify iframe{
+    margin-left: 10px;
+  }
 }
 
 @media only screen and (max-width: 800px)
@@ -1246,9 +1250,19 @@ div.calendario iframe.docCalendario {
   .todasLasNoticias h3{
     width: 450px;
     font-size: 27px;}
+
+  div.spotify a{
+    margin: 0px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 50px;
+  }
 }
 
 @media only screen and (max-width: 530px){
+  div.spotify a{
+    margin-left: 0px;
+  }
   header h1{
     font-size: 25px;
   }
@@ -1299,10 +1313,16 @@ div.calendario iframe.docCalendario {
   .logosComunicacion h3{
     font-size: 22px;
   }
+  div.spotify a{
+    margin-left: 40px;
+  }
 }
 
 @media only screen and (max-width: 400px)
 {
+  div.spotify a{
+    margin-left: 0px;
+  }
   .bienvenida h2{
     font-size: 23px;
   }
@@ -1364,6 +1384,10 @@ div.calendario iframe.docCalendario {
   
   .logosComunicacion button{
     margin: 5px;
+  }
+
+  .tCanciones{
+    font-size: 35px;
   }
 }
 /* # sourceMappingURL=estilos.css.map */
