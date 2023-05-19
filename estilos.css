@@ -461,6 +461,7 @@ div.fotosCanciones a img:hover {
   margin: 10px;
   border: #1b1b1b solid 5px;
   border-radius: 20px;
+  height: auto;
 }
 
 .tCanciones{
@@ -918,6 +919,10 @@ div.calendario iframe.docCalendario {
     font-weight: bold;
     font-size: 40px;
   }
+
+  section.youtubeYSpotify{
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (max-width: 1180px)
@@ -999,6 +1004,10 @@ div.calendario iframe.docCalendario {
 
   section.galeriahd{
     flex-wrap: wrap;
+  }
+
+  .spotify{
+    margin-left: 10px;
   }
 }
 
@@ -1197,6 +1206,10 @@ div.calendario iframe.docCalendario {
 
   section.logosComunicacion{
     flex-wrap: wrap;
+  }
+
+  .youtubeYSpotify iframe{
+    display: none;
   }
 }
 
